@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-lato: 'Lato', sans-serif;
+}
+
+body {
+  font-family: var(--font-lato);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+}
+
+@layer base {
+  :root {
+    --background: 280 50% 98%;
+    --foreground: 280 10% 10%;
+
+    --card: 280 50% 98%;
+    --card-foreground: 280 10% 10%;
+ 
+    --popover: 280 50% 98%;
+    --popover-foreground: 280 10% 10%;
+ 
+    --primary: 280 50% 50%;
+    --primary-foreground: 280 10% 98%;
+ 
+    --secondary: 280 30% 90%;
+    --secondary-foreground: 280 10% 10%;
+ 
+    --muted: 280 30% 90%;
+    --muted-foreground: 280 5% 40%;
+ 
+    --accent: 280 30% 90%;
+    --accent-foreground: 280 10% 10%;
+ 
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 280 10% 98%;
+
+    --border: 280 30% 90%;
+    --input: 280 30% 90%;
+    --ring: 280 50% 50%;
+ 
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
